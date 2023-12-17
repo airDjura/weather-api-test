@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Contracts\Clients\WeatherClientInterface;
+use App\Contracts\Weather\WeatherClientInterface;
 use File;
 use Illuminate\Support\ServiceProvider;
 
@@ -10,12 +10,12 @@ class WeatherClientsServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        // Register all service clients (All classes in the Clients folder)
-        $filesInFolder = File::files(base_path() .'/app/Services/Clients');
+        // Register all weather service clients (All classes in the Clients folder)
+        $filesInFolder = File::files(base_path() .'/app/Services/Weather/Clients');
 
         foreach ($filesInFolder as $path) {
             $file = pathinfo($path);
-            $class = 'App\Services\Clients\\' . $file['filename'];
+            $class = 'App\Services\Weather\Clients\\' . $file['filename'];
             $this->app->singleton(
                 WeatherClientInterface::class,
                 $class

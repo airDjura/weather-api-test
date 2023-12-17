@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Contracts\Services;
+namespace App\Contracts\Weather\Services;
 
-use App\Contracts\Clients\WeatherClientInterface;
+use App\Contracts\Weather\WeatherClientInterface;
 use App\Dto\Weather\Clients\WeatherDataDto;
 
 interface WeatherServiceInterface

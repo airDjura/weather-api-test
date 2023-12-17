@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\Clients;
+namespace App\Services\Weather\Clients;
 
-use App\Contracts\Clients\WeatherClientInterface;
+use App\Contracts\Weather\WeatherClientInterface;
 use App\Dto\Weather\Clients\WeatherDataDto;
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;

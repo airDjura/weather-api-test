@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use App\Contracts\Services\WeatherServiceInterface;
-use App\Services\WeatherService;
+use App\Contracts\Weather\Services\WeatherServiceInterface;
+use App\Services\Weather\WeatherService;
 use Illuminate\Support\ServiceProvider;
 
 class WeatherServiceServiceProvider extends ServiceProvider

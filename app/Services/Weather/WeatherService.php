@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Services;
+namespace App\Services\Weather;
 
-use App\Contracts\Clients\WeatherClientInterface;
-use App\Contracts\Services\WeatherServiceInterface;
+use App\Contracts\Weather\Services\WeatherServiceInterface;
+use App\Contracts\Weather\WeatherClientInterface;
 use App\Dto\Weather\Clients\WeatherDataDto;
 
 class WeatherService implements WeatherServiceInterface

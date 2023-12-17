@@ -5,7 +5,7 @@ namespace App\Http\Api;
 use App\Dto\Weather\Clients\WeatherDataDto;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\Weather\GetByCoordinatesRequest;
-use App\Services\WeatherService;
+use App\Services\Weather\WeatherService;
 
 class WeatherController extends Controller
 {

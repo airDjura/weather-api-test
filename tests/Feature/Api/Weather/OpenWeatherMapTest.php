@@ -33,8 +33,8 @@ class OpenWeatherMapTest extends WeatherTestCase
 
     /**
      * @test
-     * @covers \App\Services\Clients\OpenWeatherMapClient
-     * @covers \App\Services\WeatherService
+     * @covers \App\Services\Weather\Clients\OpenWeatherMapClient
+     * @covers \App\Services\Weather\WeatherService
      * @covers \App\Http\Api\WeatherController
      * @covers \App\Http\Requests\Api\Weather\WeatherRequest
      * @covers \App\Dto\Weather\Clients\WeatherDataDto
@@ -74,8 +74,8 @@ class OpenWeatherMapTest extends WeatherTestCase
 
     /**
      * @test
-     * @covers \App\Services\Clients\OpenWeatherMapClient
-     * @covers \App\Services\WeatherService
+     * @covers \App\Services\Weather\Clients\OpenWeatherMapClient
+     * @covers \App\Services\Weather\WeatherService
      * @covers \App\Http\Api\WeatherController
      * @covers \App\Http\Requests\Api\Weather\WeatherRequest
      */

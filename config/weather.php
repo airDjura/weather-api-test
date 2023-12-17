@@ -1,8 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Facade;
-use Illuminate\Support\ServiceProvider;
-
 return [
 
     /*
@@ -20,8 +17,9 @@ return [
 
     'clients' => [
         'open_weather_map' => [
-            'class' => \App\Services\Clients\OpenWeatherMapClient::class,
+            'class' => \App\Services\Weather\Clients\OpenWeatherMapClient::class,
             'api_key' => env('OPEN_WEATHER_MAP_API_KEY'),
         ],
+        // add new third party client here
     ]
 ];

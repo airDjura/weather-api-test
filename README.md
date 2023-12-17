@@ -25,3 +25,11 @@ http://localhost/api/weather/get-by-coordinates?lat=42&lon=18
 ### Run tests
 
 ```docker compose exec php php artisan test```
+
+### Add new third party weather client
+
+Create new weather client class that implements `App\Contracts\Weather\WeatherClientInterface` at `app/Services/Weather/Clients` directory - It will be automatically registered in service container
+
+Add new client to clients array in `config/weather.php` file
+
+Change `WEATHER_CLIENT` in `.env` file to new client name

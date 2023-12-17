@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Contracts\Clients;
+namespace App\Contracts\Weather;
 
 use App\Dto\Weather\Clients\WeatherDataDto;
 
