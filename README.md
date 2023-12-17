@@ -34,8 +34,8 @@ docker compose exec php php artisan test
 
 ### Add new third party weather client
 
-Create new weather client class that implements `App\Contracts\Weather\WeatherClientInterface` at `app/Services/Weather/Clients` directory - It will be automatically registered in service container
+Create new weather client class that implements `App\Contracts\Weather\WeatherClientInterface`
 
-Add new client to clients array in `config/weather.php` file
+Add new client to `clients` array in `config/weather.php` file - Class will be automatically registered by `WeatherClientsServiceProvider`
 
 Change `WEATHER_CLIENT` in `.env` file to new client name
