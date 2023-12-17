@@ -2,11 +2,15 @@
 
 ### Run docker compose
 
-```docker compose up -d```
+```
+docker compose up -d
+```
 
 ### Setup project
 
-```docker compose exec php composer install && cp .env.example .env && php artisan key:generate```
+```
+docker compose exec php composer install && cp .env.example .env && php artisan key:generate
+```
 
 ### Change open weather map API key
 
@@ -24,7 +28,9 @@ http://localhost/api/weather/get-by-coordinates?lat=42&lon=18
 
 ### Run tests
 
-```docker compose exec php php artisan test```
+```
+docker compose exec php php artisan test
+```
 
 ### Add new third party weather client
 
